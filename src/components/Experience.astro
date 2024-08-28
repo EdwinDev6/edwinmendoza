@@ -1,0 +1,36 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Freelance Developer",
+    company: "Workana",
+    description:
+      "Me especializo en el desarrollo de aplicaciones web y móviles utilizando tecnologías modernas como React, React Native, Node.js, y Express. Trabajo en estrecha colaboración con clientes para entender sus necesidades y convertir sus ideas en soluciones tecnológicas eficientes y escalables",
+  },
+  {
+    date: "Contrato de 4 meses",
+    title: "Software Engineer",
+    company: "Minnek Digital Agency",
+    description:
+      "Responsable de la creacion de E-commerce y aplicaciones web para clientes de la agencia. Implementación de tools internas para mejorar la eficiencia del equipo. Mejora de un 20% en la entrega de software. utilizando tecnologías como React, Next, Strapi, Node.js, y Express.",
+  },
+  {
+    date: "Contrato de 4 meses",
+    title: "Frontend Web Developer",
+    company: "Your Store Wizards",
+    description:
+      "Responsable de la creacion y mantenimiento de E-commerce para clientes. Implementación de nuevas funcionalidades y mejoras en la experiencia de usuario. Trabajo en estrecha colaboración con el equipo de diseño y marketing para asegurar la coherencia de la marca. mejorando en un 25% las ventas de cada cliente. Utilizando tecnologias como Shopify, BigCommerce, Html, Css y JavaScript.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
