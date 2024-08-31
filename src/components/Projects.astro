@@ -1,40 +1,40 @@
 ---
-import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
-import Tailwind from "./icons/Tailwind.astro"
-import Link from "./icons/Link.astro"
-import LinkButton from "./LinkButton.astro"
+import GitHub from "./icons/GitHub.astro";
+import NextJS from "./icons/NextJS.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import Link from "./icons/Link.astro";
+import LinkButton from "./LinkButton.astro";
 
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
-    class: "bg-black text-white",
-    icon: NextJS,
-  },
-  TAILWIND: {
-    name: "Tailwind CSS",
-    class: "bg-[#003159] text-white",
-    icon: Tailwind,
-  },
-}
+	NEXT: {
+		name: "Next.js",
+		class: "bg-black text-white",
+		icon: NextJS,
+	},
+	TAILWIND: {
+		name: "Tailwind CSS",
+		class: "bg-[#003159] text-white",
+		icon: Tailwind,
+	},
+};
 const PROJECTS = [
-  {
-    title: "EasyDraw",
-    description:
-      "App boletos de rifas que ayudara en el proceso de ventas de numeros a los dueños de dinamicas en Republica Dominicana, llevando un conteo exactos de boletos, dinero recaudado, datos en tiempo real con los demas socios usando React Native, ExpressJs y TailwindCss.",
-    image: "/projects/easydraw.png",
-    tags: [TAGS.TAILWIND],
-  },
-  {
-    title: "Techtalk blog",
-    description:
-      "App Web basada en el sistema de post de Facebook donde los usuarios pueden crear, editar y eliminar post mas algunas funcionalidades extras, usando React, TailwindCss y ExpressJs.",
-    link: "https://techtalk-frontend.vercel.app/login",
-    github: "https://github.com/EdwinDev6/techtalk-frontend",
-    image: "/projects/techtalk.png",
-    tags: [TAGS.TAILWIND],
-  },
-]
+	{
+		title: "EasyDraw",
+		description:
+			"App boletos de rifas que ayudara en el proceso de ventas de numeros a los dueños de dinamicas en Republica Dominicana, llevando un conteo exactos de boletos, dinero recaudado, datos en tiempo real con los demas socios usando React Native, ExpressJs, TailwindCss y MySQL.",
+		image: "/projects/easydraw.png",
+		tags: [TAGS.TAILWIND],
+	},
+	{
+		title: "Techtalk blog",
+		description:
+			"App Web basada en un sistema de post donde los usuarios pueden crear, editar y eliminar post mas algunas funcionalidades extras como Autenticacion, roles, recuperacion de contraseña via email, compartir a diferente redes sociales, usando React, TailwindCss y ExpressJs.",
+		link: "https://techtalk-frontend.vercel.app/login",
+		github: "https://github.com/EdwinDev6/techtalk-frontend",
+		image: "/projects/techtalk.png",
+		tags: [TAGS.TAILWIND],
+	},
+];
 ---
 
 <div class="flex flex-col gap-y-16">
