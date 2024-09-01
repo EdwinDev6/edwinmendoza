@@ -4,6 +4,10 @@ import NextJS from "./icons/NextJS.astro";
 import Tailwind from "./icons/Tailwind.astro";
 import Link from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
+import REACT from "./icons/React.astro";
+import HTML from "./icons/Html.astro";
+import CSS from "./icons/Css.astro";
+import JS from "./icons/Js.astro";
 
 const TAGS = {
 	NEXT: {
@@ -16,6 +20,26 @@ const TAGS = {
 		class: "bg-[#003159] text-white",
 		icon: Tailwind,
 	},
+	REACT: {
+		name: "React",
+		class: "bg-[#003159] text-white",
+		icon: REACT,
+	},
+	HTML: {
+		name: "HTML",
+		class: "bg-[#003159] text-white",
+		icon: HTML,
+	},
+  CSS: {
+    name: "CSS",
+    class: "bg-[#003159] text-white",
+    icon: CSS,
+  },
+  JS: {
+    name: "JavaScript",
+    class: "bg-[#003159] text-white",
+    icon: JS,
+  },
 };
 const PROJECTS = [
 	{
@@ -23,7 +47,7 @@ const PROJECTS = [
 		description:
 			"App boletos de rifas que ayudara en el proceso de ventas de numeros a los dueños de dinamicas en Republica Dominicana, llevando un conteo exactos de boletos, dinero recaudado, datos en tiempo real con los demas socios usando React Native, ExpressJs, TailwindCss y MySQL.",
 		image: "/projects/easydraw.png",
-		tags: [TAGS.TAILWIND],
+		tags: [TAGS.TAILWIND, TAGS.REACT],
 	},
 	{
 		title: "Techtalk News",
@@ -32,7 +56,7 @@ const PROJECTS = [
 		link: "https://techtalk-frontend.vercel.app/login",
 		github: "https://github.com/EdwinDev6/techtalk-frontend",
 		image: "/projects/techtalk.png",
-		tags: [TAGS.TAILWIND],
+		tags: [TAGS.TAILWIND, TAGS.REACT],
 	},
 	{
 		title: "Metacritic App",
@@ -40,7 +64,7 @@ const PROJECTS = [
 			"Esta es una aplicación móvil creada con React Native que muestra los videojuegos mejor calificados según Metacritic. La aplicación permite a los usuarios explorar y descubrir los juegos mejor valorados en varias plataformas.",
 		github: "https://github.com/EdwinDev6/metacritic-app-react-native",
 		image: "/projects/metacritic.png",
-		tags: [TAGS.TAILWIND],
+		tags: [TAGS.TAILWIND, TAGS.REACT],
 	},
 	{
 		title: "Arkanoid Game",
@@ -49,7 +73,7 @@ const PROJECTS = [
 		github: "https://github.com/EdwinDev6/arkanoid-game-vanilla",
 		link: "https://arkanoid-game-vanilla.vercel.app/",
 		image: "/projects/arkanoid.PNG",
-		tags: [],
+		tags: [TAGS.HTML, TAGS.CSS, TAGS.JS],
 	},
 	{
 		title: "Tetris Game",
@@ -58,7 +82,7 @@ const PROJECTS = [
 		github: "https://github.com/EdwinDev6/tetris-js-vanilla",
 		link: "https://tetris-js-vanilla.vercel.app/",
 		image: "/projects/tetris.PNG",
-		tags: [],
+		tags: [TAGS.HTML, TAGS.CSS, TAGS.JS],
 	},
 	{
 		title: "ChatGPT Local",
@@ -67,7 +91,7 @@ const PROJECTS = [
 		github: "https://github.com/EdwinDev6/local-gpt-vanilla",
 		link: "https://local-gpt-vanilla.vercel.app/",
 		image: "/projects/local-gpt.PNG",
-		tags: [],
+		tags: [TAGS.HTML, TAGS.CSS, TAGS.JS],
 	},
 	{
 		title: "Tinder swipe clone",
@@ -76,7 +100,7 @@ const PROJECTS = [
 		github: "https://github.com/EdwinDev6/Swipe-Match-Tinder",
 		link: "https://swipe-match-tinder.vercel.app/",
 		image: "/projects/tinder.PNG",
-		tags: [],
+		tags: [TAGS.HTML, TAGS.CSS, TAGS.JS],
 	},
 	{
 		title: "Typing Game",
@@ -85,7 +109,7 @@ const PROJECTS = [
 		github: "https://github.com/EdwinDev6/js-typing-challenge",
 		link: "https://js-typing-challenge.vercel.app/",
 		image: "/projects/digited.PNG",
-		tags: [],
+		tags: [TAGS.HTML, TAGS.CSS, TAGS.JS],
 	},
 	{
 		title: "Ip Info Search",
@@ -94,7 +118,7 @@ const PROJECTS = [
 		github: "https://github.com/EdwinDev6/search-info-ip-vanilla",
 		link: "https://search-info-ip-vanilla.vercel.app/",
 		image: "/projects/api-info.PNG",
-		tags: [],
+		tags: [TAGS.HTML, TAGS.CSS, TAGS.JS],
 	},
 	{
 		title: "Landing Page Parallax",
@@ -103,7 +127,7 @@ const PROJECTS = [
 		github: "https://github.com/EdwinDev6/landing-design-parallax",
 		link: "https://landing-design-parallax.vercel.app/",
 		image: "/projects/parallax.PNG",
-		tags: [],
+		tags: [TAGS.HTML, TAGS.CSS],
 	},
 ];
 ---
