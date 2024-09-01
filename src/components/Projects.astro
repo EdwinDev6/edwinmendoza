@@ -26,7 +26,7 @@ const PROJECTS = [
 		tags: [TAGS.TAILWIND],
 	},
 	{
-		title: "Techtalk blog",
+		title: "Techtalk News",
 		description:
 			"App Web basada en un sistema de post donde los usuarios pueden crear, editar y eliminar post mas algunas funcionalidades extras como Autenticacion, roles, recuperacion de contraseña via email, compartir a diferente redes sociales, usando React, TailwindCss y ExpressJs.",
 		link: "https://techtalk-frontend.vercel.app/login",
@@ -34,13 +34,76 @@ const PROJECTS = [
 		image: "/projects/techtalk.png",
 		tags: [TAGS.TAILWIND],
 	},
-  {
+	{
 		title: "Metacritic App",
 		description:
 			"Esta es una aplicación móvil creada con React Native que muestra los videojuegos mejor calificados según Metacritic. La aplicación permite a los usuarios explorar y descubrir los juegos mejor valorados en varias plataformas.",
 		github: "https://github.com/EdwinDev6/metacritic-app-react-native",
 		image: "/projects/metacritic.png",
 		tags: [TAGS.TAILWIND],
+	},
+	{
+		title: "Arkanoid Game",
+		description:
+			" Juego de Arkanoid creado con JavaScript, HTML y CSS. El objetivo del juego es destruir todos los bloques con la bola sin que esta caiga al suelo. Espero que seas buen jugador, porque solo tendras 1 vida.",
+		github: "https://github.com/EdwinDev6/arkanoid-game-vanilla",
+		link: "https://arkanoid-game-vanilla.vercel.app/",
+		image: "/projects/arkanoid.PNG",
+		tags: [],
+	},
+	{
+		title: "Tetris Game",
+		description:
+			" Juego de tetris creado con JavaScript, HTML y CSS. El objetivo del juego es encajar las piezas que caen del cielo para formar lineas completas y asi sumar puntos.",
+		github: "https://github.com/EdwinDev6/tetris-js-vanilla",
+		link: "https://tetris-js-vanilla.vercel.app/",
+		image: "/projects/tetris.PNG",
+		tags: [],
+	},
+	{
+		title: "ChatGPT Local",
+		description:
+			"ChatGPT Local  permite a los usuarios interactuar con el modelo de lenguaje GPT-3 de OpenAI. La aplicación permite a los usuarios enviar mensajes de texto y recibir respuestas generadas por el modelo de lenguaje. todo hecho en VanillaJS",
+		github: "https://github.com/EdwinDev6/local-gpt-vanilla",
+		link: "https://local-gpt-vanilla.vercel.app/",
+		image: "/projects/local-gpt.PNG",
+		tags: [],
+	},
+	{
+		title: "Tinder swipe clone",
+		description:
+			" Clon de la funcionalidad de swipe de Tinder, creado con Html Css javaScript. La aplicacion permite a los usuarios deslizar a la izquierda o derecha para dar like o dislike a otros usuarios.",
+		github: "https://github.com/EdwinDev6/Swipe-Match-Tinder",
+		link: "https://swipe-match-tinder.vercel.app/",
+		image: "/projects/tinder.PNG",
+		tags: [],
+	},
+	{
+		title: "Typing Game",
+		description:
+			"Juego de mecanografia creado con Html, Css y JavaScript. El objetivo del juego es escribir las palabras que aparecen en la pantalla antes de que el tiempo se acabe.",
+		github: "https://github.com/EdwinDev6/js-typing-challenge",
+		link: "https://js-typing-challenge.vercel.app/",
+		image: "/projects/digited.PNG",
+		tags: [],
+	},
+	{
+		title: "Ip Info Search",
+		description:
+			"Pagina web que permite buscar informacion de una ip, como la ubicacion, proveedor de internet, pais, region, ciudad, latitud, longitud, codigo postal, zona horaria, moneda, idioma, bandera, etc. La aplicacion fue creada con Html, Css y JavaScript",
+		github: "https://github.com/EdwinDev6/search-info-ip-vanilla",
+		link: "https://search-info-ip-vanilla.vercel.app/",
+		image: "/projects/api-info.PNG",
+		tags: [],
+	},
+	{
+		title: "Landing Page Parallax",
+		description:
+			" Pagina de aterrizaje con efecto parallax, creada con Html y Css. La pagina cuenta con un efecto de parallax en el fondo.",
+		github: "https://github.com/EdwinDev6/landing-design-parallax",
+		link: "https://landing-design-parallax.vercel.app/",
+		image: "/projects/parallax.PNG",
+		tags: [],
 	},
 ];
 ---
@@ -51,7 +114,7 @@ const PROJECTS = [
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+      <img alt={title} class="object-cover object-top w-full h-56 transition duration-200 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
     </div>
   </div>
 
