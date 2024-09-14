@@ -8,6 +8,10 @@ import REACT from "./icons/React.astro";
 import HTML from "./icons/Html.astro";
 import CSS from "./icons/Css.astro";
 import JS from "./icons/Js.astro";
+import JWT from "./icons/Jwt.astro";
+import Express from "./icons/Express.astro";
+import MySQL from "./icons/Mysql.astro";
+import MONGOD from "./icons/Mongo.astro";
 
 const TAGS = {
 	NEXT: {
@@ -40,6 +44,26 @@ const TAGS = {
 		class: "bg-[#003159] text-white",
 		icon: JS,
 	},
+	JWT: {
+		name: "JWT",
+		class: "bg-[#003159] text-white",
+		icon: JWT,
+	},
+	EXPRESS: {
+		name: "Express",
+		class: "bg-[#003159] text-white",
+		icon: Express,
+	},
+	MYSQL: {
+		name: "MySQL",
+		class: "bg-[#003159] text-white",
+		icon: MySQL,
+	},
+	MONGO: {
+		name: "MongoDB",
+		class: "bg-[#003159] text-white",
+		icon: MONGOD,
+	},
 };
 const PROJECTS = [
 	{
@@ -56,7 +80,7 @@ const PROJECTS = [
 		link: "https://techtalk-frontend.vercel.app/login",
 		github: "https://github.com/EdwinDev6/techtalk-frontend",
 		image: "/projects/techtalk.avif",
-		tags: [TAGS.TAILWIND, TAGS.REACT],
+		tags: [TAGS.TAILWIND, TAGS.REACT, TAGS.EXPRESS, TAGS.MONGO, TAGS.JWT],
 	},
 	{
 		title: "Metacritic App",
@@ -173,19 +197,17 @@ const PROJECTS = [
     <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
       {title}
     </h3>
-    <div class="flex flex-wrap mt-2">
-      <ul class="flex flex-row mb-2 gap-x-2">
-          {tags.map((tag) => (
-            <li>
-              <span
-                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
-              >
-                <tag.icon class="size-4" />
-                {tag.name}
-              </span>
-            </li>
-          ))}
-        </ul>
+		<div class="flex flex-wrap mt-2">
+  <ul class="flex flex-wrap mb-2 gap-2">
+    {tags.map((tag) => (
+      <li>
+        <span class={`flex rounded-full text-xs ${tag.class} py-1 px-2`}>
+          <tag.icon class="size-4" />
+          {tag.name}
+        </span>
+      </li>
+    ))}
+  </ul>
 
       <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
       <footer class="flex items-end justify-start mt-4 gap-x-4">
