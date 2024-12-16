@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://edwindev6-portfolio.vercel.app/sitemap.xml
