@@ -10,6 +10,7 @@ import Projects from "@/components/Projects.astro"
 import SectionContainer from "@/components/SectionContainer.astro"
 import Hero from "@/components/Hero.astro"
 import TitleSection from "@/components/TitleSection.astro"
+import Whatsapp from "@/components/Whatsapp.astro"
 ---
 
 <Layout
@@ -21,8 +22,8 @@ import TitleSection from "@/components/TitleSection.astro"
       <Hero>
       </slot>
     </Hero>
-    </SectionContainer>
-    <div class="space-y-24">
+  </SectionContainer>
+  <div class="space-y-24">
     <SectionContainer id="experiencia">
       <TitleSection>
         <Briefcase class="size-8" />
@@ -30,7 +31,7 @@ import TitleSection from "@/components/TitleSection.astro"
       </TitleSection>
       <Experience />
     </SectionContainer>
-
+    
     <SectionContainer id="proyectos">
       <TitleSection>
         <CodeIcon class="size-7" />
@@ -38,7 +39,7 @@ import TitleSection from "@/components/TitleSection.astro"
       </TitleSection>
       <Projects />
     </SectionContainer>
-
+    
     <SectionContainer id="sobre-mi">
       <TitleSection>
         <ProfileCheck class="size-8" />
@@ -47,5 +48,6 @@ import TitleSection from "@/components/TitleSection.astro"
       <AboutMe />
     </SectionContainer>
   </div>
+  <Whatsapp />
   </main>
 </Layout>
