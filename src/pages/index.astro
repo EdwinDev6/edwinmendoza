@@ -1,6 +1,5 @@
 ---
 import Layout from "@/layouts/Layout.astro"
-
 import AboutMe from "@/components/AboutMe.astro"
 import Briefcase from "@/components/icons/Briefcase.astro"
 import CodeIcon from "@/components/icons/Code.astro"
@@ -11,6 +10,7 @@ import SectionContainer from "@/components/SectionContainer.astro"
 import Hero from "@/components/Hero.astro"
 import TitleSection from "@/components/TitleSection.astro"
 import Whatsapp from "@/components/Whatsapp.astro"
+import Skills from "@/components/Skills.astro"
 ---
 
 <Layout
@@ -22,6 +22,9 @@ import Whatsapp from "@/components/Whatsapp.astro"
       <Hero>
       </slot>
     </Hero>
+  </SectionContainer>
+  <SectionContainer class="py-16 md:py-36">
+    <Skills />
   </SectionContainer>
   <div class="space-y-24">
     <SectionContainer id="experiencia">
