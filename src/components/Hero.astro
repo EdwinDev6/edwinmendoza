@@ -4,7 +4,9 @@ import Badge from "@/components/Badge.astro"
 import LinkedInIcon from "@/components/icons/LinkedIn.astro"
 import MailIcon from "@/components/icons/Mail.astro"
 import SocialPill from "@/components/SocialPill.astro"
-import GitHub from "./icons/GitHub.astro"
+import GitHubLogo from "./icons/GithubLogo.astro"
+import Whatsapp from "./icons/Whatsapp.astro"
+import Telegram from "./icons/Telegram.astro"
 ---
 
 <div class="max-w-xl">
@@ -39,15 +41,23 @@ import GitHub from "./icons/GitHub.astro"
   <nav class="flex flex-wrap gap-4 mt-8">
     <SocialPill href="mailto:edwinmendoza0620@gmail.com">
       <MailIcon class="size-4" />
-      Contáctame
+      Correo
     </SocialPill>
     <SocialPill href="https://linkedin.com/in/edwindev6">
       <LinkedInIcon class="size-4" />
       LinkedIn
     </SocialPill>
     <SocialPill href="https://github.com/EdwinDev6">
-    <GitHub class="size-4" />
+    <GitHubLogo class="size-4" />
     Github
     </SocialPill>
+     <SocialPill href="https://wa.link/woaj3m">
+     <Whatsapp class="size-4" />
+      Whatsapp
+     </SocialPill>
+     <SocialPill href="https://telegram.me/Edwindev6">
+     <Telegram class="size-4" />
+      Telegram
+     </SocialPill>
   </nav>
 </div>
