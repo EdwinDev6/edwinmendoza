@@ -8,8 +8,8 @@ export default defineConfig({
     tailwind(),
     robotsTxt({
       policy: [{ userAgent: '*', allow: '/' }],
-      sitemap: 'https://edwindev6-portfolio.vercel.app/sitemap.xml',
+      sitemap: 'https://edwinmendoza.info/sitemap.xml',
     })
   ],
-  site: 'https://edwindev6-portfolio.vercel.app'
+  site: 'https://edwinmendoza.info'
 })

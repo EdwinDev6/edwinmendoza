@@ -12,45 +12,52 @@ import TitleSection from "@/components/TitleSection.astro"
 import Whatsapp from "@/components/Whatsapp.astro"
 import Skills from "@/components/Skills.astro"
 ---
-
 <Layout
-  title="Porfolio de Edwin Mendoza Rodriguez"
-  description="Contrata a Edwin para crear tu aplicación web o móvil."
+  title="Edwin Mendoza – Desarrollador Full Stack | NuvixWeb Digital Services"
+  description="Portafolio profesional de Edwin Mendoza Rodríguez, desarrollador full stack. Contrata experiencia real con NuvixWeb Digital Services."
 >
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
       <Hero>
-      </slot>
-    </Hero>
-  </SectionContainer>
-  <SectionContainer class="py-16 md:py-36">
-    <Skills />
-  </SectionContainer>
-  <div class="space-y-24">
-    <SectionContainer id="experiencia">
-      <TitleSection>
-        <Briefcase class="size-8" />
-        Experiencia laboral
-      </TitleSection>
-      <Experience />
+        <h1 class="text-3xl md:text-5xl font-bold text-center">
+          Edwin Mendoza – Desarrollador Full Stack
+        </h1>
+        <p class="mt-4 text-center text-lg text-gray-600">
+          Experto en soluciones web, móviles y gestión empresarial con Odoo.
+        </p>
+      </Hero>
     </SectionContainer>
-    
-    <SectionContainer id="proyectos">
-      <TitleSection>
-        <CodeIcon class="size-7" />
-        Proyectos
-      </TitleSection>
-      <Projects />
+
+    <SectionContainer class="py-16 md:py-36">
+      <Skills />
     </SectionContainer>
-    
-    <SectionContainer id="sobre-mi">
-      <TitleSection>
-        <ProfileCheck class="size-8" />
-        Sobre mí
-      </TitleSection>
-      <AboutMe />
-    </SectionContainer>
-  </div>
-  <Whatsapp />
+
+    <div class="space-y-24">
+      <SectionContainer id="experiencia">
+        <TitleSection>
+          <Briefcase class="size-8" />
+          Experiencia laboral
+        </TitleSection>
+        <Experience />
+      </SectionContainer>
+
+      <SectionContainer id="proyectos">
+        <TitleSection>
+          <CodeIcon class="size-7" />
+          Proyectos
+        </TitleSection>
+        <Projects />
+      </SectionContainer>
+
+      <SectionContainer id="sobre-mi">
+        <TitleSection>
+          <ProfileCheck class="size-8" />
+          Sobre mí
+        </TitleSection>
+        <AboutMe />
+      </SectionContainer>
+    </div>
+
+    <Whatsapp />
   </main>
 </Layout>

@@ -12,39 +12,58 @@ interface Props {
 
 const { description, title } = Astro.props
 ---
-
 <!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
+    <meta property="og:image" content="https://edwinmendoza.info/edwin.avif" />
+    <meta property="og:image:type" content="image/avif" />
+    <meta name="twitter:image" content="https://edwinmendoza.info/edwin.avif" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
     <ViewTransitions />
+
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Edwin Mendoza",
+        "url": "https://edwinmendoza.info",
+        "image": "https://edwinmendoza.info/edwin.avif",
+        "jobTitle": "Desarrollador Full Stack",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Edwin Mendoza | NuvixWeb Digital Services"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/edwindev6",
+          "https://github.com/edwindev6"
+        ]
+      })}
+    </script>
   </head>
 
   <body class="relative text-black dark:text-white">
     <div
       class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-50 dark:bg-gray-950
-      bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))]
+      bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))] 
       dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
-    >
-    </div>
+    ></div>
     <Header />
     <slot />
     <Footer />
+
     <style is:global>
       :root {
         color-scheme: light dark;
       }
-
       html {
         font-family: "Onest Variable", system-ui, sans-serif;
         scroll-behavior: smooth;
       }
-
       body {
         color: rgba(17, 17, 17, 0.9);
         display: flex;
@@ -52,25 +71,21 @@ const { description, title } = Astro.props
         min-height: 100vh;
         overscroll-behavior: none;
       }
-
       @media (prefers-reduced-motion: reduce) {
         html {
           scroll-behavior: auto;
         }
       }
-
       @media (prefers-color-scheme: dark) {
         body {
           color: rgba(255, 255, 255, 0.9);
         }
       }
-
       #header-nav {
         animation: blur linear both 0.5s;
         animation-timeline: scroll();
         animation-range: 0 500px;
       }
-
       @keyframes blur {
         to {
           backdrop-filter: blur(20px);
@@ -84,7 +99,6 @@ const { description, title } = Astro.props
           border-radius: 9999px;
         }
       }
-
       @media (prefers-color-scheme: dark) {
         @keyframes blur {
           from {

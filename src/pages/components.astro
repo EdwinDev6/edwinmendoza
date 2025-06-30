@@ -3,28 +3,33 @@ import Badge from "@/components/Badge.astro"
 import SectionContainer from "@/components/SectionContainer.astro"
 import SocialPill from "@/components/SocialPill.astro"
 import LinkedInIcon from "@/components/icons/LinkedIn.astro"
-
 import Layout from "@/layouts/Layout.astro"
 ---
-
 <Layout
-  title="Design System porfolio.dev"
-  description="El catálogo de componentes de nuestro porfolio"
+  title="Sistema de Diseño de Edwin Mendoza"
+  description="Explora los componentes del sistema de diseño creados por Edwin Mendoza, desarrollador full stack y fundador de NuvixWeb Digital Services."
 >
   <SectionContainer class="py-44 pb-32 flex flex-col gap-y-10">
     <article class="mb-10">
-      <h1 class="mb-4 text-xl font-semibold">&lt;Badge /&gt;</h1>
+      <h1 class="mb-4 text-2xl font-bold">
+        Sistema de diseño por Edwin Mendoza
+      </h1>
+      <p class="text-gray-600 mb-6">
+        Este catálogo de componentes forma parte de mi portafolio como desarrollador full stack.
+      </p>
+    </article>
 
+    <article class="mb-10">
+      <h2 class="mb-4 text-xl font-semibold">&lt;Badge /&gt;</h2>
       <Badge>Disponible para trabajar</Badge>
     </article>
 
     <article class="mb-10">
-      <h1 class="mb-4 text-xl font-semibold">&lt SocialPill /&gt;</h1>
-
+      <h2 class="mb-4 text-xl font-semibold">&lt;SocialPill /&gt;</h2>
       <div class="flex">
         <SocialPill href="https://linkedin.com/in/edwindev6">
           <LinkedInIcon class="size-4 md:size-6" />
-          LinkedIn
+          Edwin Mendoza en LinkedIn
         </SocialPill>
       </div>
     </article>
